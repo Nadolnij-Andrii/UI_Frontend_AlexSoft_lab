@@ -12,11 +12,12 @@ body{
 }
 header{
     height: 96px;
-    border-top: 4px solid #a7c353;
+    border-top: 5px solid #a7c353;
 }
 .menu-and-logo{
-    height: 95px;
+    height: 96px;
     display: flex;
+    margin-top: -2px;
 }
 .logo{
     margin: auto 0;
@@ -175,7 +176,7 @@ nav div:first-child a:hover{
     max-width: 920px;
     margin: 10px auto 10px auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 40px;
     padding-top: 40px;
     border-top: 1px solid #e2e2e2;
@@ -496,4 +497,20 @@ nav a:hover{
 .dot:hover{
     background-color: #989898;
     border: 3px solid #a7c353;
+}
+.prev:active, .next:active{
+    border-color: white;
+    transition: 0.01s ease-in;
+}
+.prev:active a, .next:active a{
+    color: white;
+    transition: 0.01s linear;
+}
+.dot:active{
+    background-color: black;
+    transition: 0.1s linear;
+}
+.infromation-card form input:last-child:active{
+    background-color: white;
+    transition: 0.1s linear;
 }
