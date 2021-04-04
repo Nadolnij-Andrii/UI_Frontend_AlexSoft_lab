@@ -198,7 +198,6 @@ nav div:first-child a:hover{
 }
 .big-content-card-image{
     background: no-repeat center/100% url(img/big_card_image.jpg);
-    max-width: 270px;
     max-height: 140px;
     width: 270px;
     height: 140px;
@@ -310,7 +309,6 @@ footer{
 .infromation-card{
     margin-top: 40px;
     margin-left: 20px;
-    max-width: 225px;
     width: 225px;
     width: max;
 }
@@ -429,7 +427,6 @@ footer{
     margin-bottom: 10px;
     font-family: "Georgia";
     border-radius: 5px;
-    max-width: 225px;
     width: 225px;
     border: none;
     padding: 11px 10px;
@@ -513,4 +510,84 @@ nav a:hover{
 .infromation-card form input:last-child:active{
     background-color: white;
     transition: 0.1s linear;
+}
+@media (max-width: 935px){
+    .slide{
+        width: auto;
+    }
+    .content-card-service-item-img{
+        margin-right: 5px;
+    }
+}
+@media (max-width: 800px){
+    .content-cards{
+        display: block;
+    }
+    .content-card{
+        max-width: 700px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .big-content-card-image{
+        width: auto;
+    }
+    .content-card-service-item{
+        justify-content: center;
+    }
+}
+@media (max-width: 645px){
+    footer{
+        display:block;
+        padding-top: 5px;
+    }
+    .infromation-card, .infromation-card:first-child{
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+    .infromation-card{
+        text-align: center;
+    }
+    .information-card-social-link{
+        justify-content: center;
+    }
+    .information-card-header{
+        text-align: center;
+    }
+    .infromation-card form input, textarea{
+        width: 400px;
+    }
+}
+@media (max-width: 500px){
+    .copyright{
+        display: block;
+        text-align: center;
+    }
+    .domain-name{
+        margin-bottom: 10px;
+    }
+    .infromation-card, .infromation-card:first-child{
+        margin-left: auto;
+        margin-right: auto;
+        width: 225px;
+    }
+    .infromation-card form input, textarea{
+        width: 255px;
+    }
+    .slider-main-text{
+        width: auto;
+        padding: 1px 5px;
+        font-size: 18px;
+    }
+    .slider-second-text{
+        height: auto;
+        padding: 1px 5px;
+    }
+    .shout{
+        font-size: 14px;
+        margin: 15px 15px 5px 15px;
+    }
 }
