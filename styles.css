@@ -1,0 +1,499 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin: 0;
+    background-color: #313131;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+}
+header{
+    height: 96px;
+    border-top: 4px solid #a7c353;
+}
+.menu-and-logo{
+    height: 95px;
+    display: flex;
+}
+.logo{
+    margin: auto 0;
+    font-family: "Georgia";
+    padding-left: 40px;
+}
+.main-logo{
+    font-size: 32px;
+    color: rgb(102, 102, 102);
+}
+.secondary-logo{
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+nav div{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+nav div:first-child{
+    background-color: #a7c353;
+}
+nav div:last-child{
+    margin-right: 40px;
+}
+nav div a{
+    font-size: 13px;
+    font-family: "Georgia";
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+}
+nav div:first-child a{
+    background-color: #a7c353;
+    color: white;
+}
+nav div:first-child a:hover{
+    color: #d9ff00;
+}
+.bottom-border{
+    height: 1px;
+    background-color: #a7c353;
+    margin: auto 40px auto 40px;
+}
+.shout{
+    font-size: 22px;
+    font-family: "Georgia";
+    color: rgb(102, 102, 102);
+    text-align: center;
+    font-style: italic;
+    margin: 43px 126px 40px 120px;
+}  
+.slideshow-container{
+    max-width: 920px;
+    max-height: 350px;
+    position: relative;
+    margin: auto;
+}
+.slide{
+    max-width: 920px;
+    max-height: 350px;
+    width: 920px;
+    height: 350px;
+    display: none;
+    background-color: #353535;
+}
+#img1{
+    background: no-repeat center/100% url(img/img1.jpg);
+}
+#img2{
+    background: no-repeat center/100% url(img/img2.jpg);
+}
+#img3{
+    background: no-repeat bottom/100% url(img/img3.jpg);
+}
+#img4{
+    background: no-repeat center/100% url(img/img4.jpg);
+}
+#img5{
+    background: no-repeat center/100% url(img/img5.jpg);
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8px;
+    width: 48px;
+    height: 48px;
+    margin-top: -24px;
+    color: #a7c353;
+    font-weight: bold;
+    font-size: 48px;
+    border-radius: 50%;
+    border: 3px solid #a7c353;
+    background-color: rgba(0,0,0,0.8);
+}
+.next{
+    right: 12px;
+}
+.prev{
+    left: 10px;
+}
+.slider-main-text{
+    font-size: 22px;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+    position: absolute;
+    background-color: #a7c353;
+    right: 62px;
+    width: 350px;
+    top: 209px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-second-text{
+    font-size: 13px;
+    font-family: "Georgia";
+    color: rgb(153, 153, 153);
+    background-color: white;
+    position: absolute; 
+    right: 62px;
+    bottom: 23px;
+    width: 350px;
+    height: 68px;
+    padding: 12px 14px;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+}
+.dot{
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 2px;
+    background-color: #a7c353;
+    border-radius: 50%;
+    display: inline-block;
+}
+.active{
+    background-color: white;
+    border: 3px solid #a7c353;
+}
+.content-cards{
+    max-width: 920px;
+    margin: 10px auto 10px auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #e2e2e2;
+}
+.content-card{
+    width: 280px;
+    max-width: 280px;   
+}  
+.content-card-header{
+    font-size: 22px;
+    font-family: "Georgia";
+    color: rgb(102, 102, 102);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.big-content-card-image-container{
+    border: 1px solid #e2e2e2;
+    padding: 4px;
+}
+.big-content-card-image{
+    background: no-repeat center/100% url(img/big_card_image.jpg);
+    max-width: 270px;
+    max-height: 140px;
+    width: 270px;
+    height: 140px;
+}
+.about-us-content-card-text{
+    font-size: 13px;
+    font-family: "Georgia";
+    color: rgb(153, 153, 153);
+    margin-top: 22px;
+    text-align: left;
+}
+.about-us-more{
+    margin: 18px 0 40px;
+    text-align: right;
+}
+.about-us-more a, .services-view-all a, .clents-view-project a  {
+    font-size: 13px;
+    font-family: "Georgia";
+    color: rgb(167, 195, 83);
+    text-decoration: none;
+}
+.content-card-service-item{
+    display: flex;
+    margin-top: 20px;
+}
+.content-card-service-item-img{
+    max-height: 64px;
+    max-width: 64px;
+    height: 64px;
+    width: 64px;
+    margin-right: 18px;
+    background-color: #333333;
+}
+#icon1{
+    background: no-repeat center/100% url(img/icon1.png);
+}
+#icon2{
+    background: no-repeat center/100% url(img/icon2.png);
+}
+#icon3{
+    background: no-repeat center/100% url(img/icon3.png);
+}
+#icon4{
+    background: no-repeat center/100% url(img/icon4.png);
+}
+.content-card-service-item-header{
+    font-size: 14px;
+    font-family: "Georgia";
+    color: rgb(135, 135, 135);
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+.content-card-service-item-secondary-text{
+    font-size: 13px;
+    font-family: "Georgia";
+    color: rgb(134, 134, 134);
+}
+.about-service-us-content-card-text{
+    font-size: 13px;
+    font-family: "Georgia";
+    color: rgb(153, 153, 153);
+    margin-top: 22px;
+    text-align: left;
+}
+.services-view-all{
+    margin: 12px 0 40px;
+    text-align: right;
+}
+.card-cleints-header{
+    display: flex;
+}
+.content-card-cleints-header{
+    display: flex;
+}
+.quote-img{
+    max-width: 53px;
+    max-height: 44px;
+    width: 53px;
+    margin-top: -15px;
+    height: 44px;
+    background: no-repeat center/100% url(img/quote.png);
+}
+.content-card-clients-name{
+    font-size: 16px;
+    font-family: "Georgia";
+    color: rgb(152, 152, 152);
+    margin-left: 10px;
+}
+.content-card-clients-name-decoration{
+    font-weight: bold;
+}
+.content-card-clents-speech{
+    font-size: 13px;
+    font-family: "Georgia";
+    color: rgb(136, 136, 136);
+    margin-top: 10px;
+}
+.clents-view-project{
+    margin: 7px 0 30px;
+    text-align: right;
+}
+footer{
+    background-color: #313131;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #3a3a3a;
+    padding-bottom: 32px;
+}
+.infromation-card{
+    margin-top: 40px;
+    margin-left: 20px;
+    max-width: 225px;
+    width: 225px;
+    width: max;
+}
+.infromation-card:first-child{
+    left: 0;
+    margin-left: 0;
+}
+.infromation-card:nth-child(2){
+    max-width: 265px;
+    width: 265px;
+}
+.information-card-header{
+    font-size: 16px;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+    padding-bottom: 16px;
+    border-bottom: 1px solid #3a3a3a;
+}
+.information-card-text{
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: "Georgia";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+}
+.information-card-text a{
+    color: #a7c353;
+    text-decoration: none;
+}
+.information-card-text-hours{
+    font-weight: bold;
+}
+.information-card-social-link{
+    display: flex;
+    padding: 26px 0 7px;
+    border-bottom: 1px solid #3a3a3a;
+}
+.information-card-social-link-img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding-bottom: 7px;
+    margin-top: -7px;
+}
+#linkedin{
+    background: no-repeat center/50% url(img/icon-linkedin.png) #383838;
+}
+#twitter{
+    background: no-repeat center/50% url(img/icon-twitter.png) #383838;
+}
+#pinterest{
+    background: no-repeat center/50% url(img/icon-pinterest.png) #383838;
+}
+#rss{
+    background: no-repeat center/50% url(img/icon-rss.png) #383838;
+}
+.information-card-social-link-text{
+    height: min-content;
+    margin-left: 11px;
+}
+.information-card-social-link-text a{
+    font-size: 12px;
+    font-family: "Georgia";
+    color: rgb(167, 195, 83);
+    line-height: 1.2;
+    text-decoration: none;
+}
+.infromation-card-blog-message{
+    margin-top: 20px;
+}
+.infromation-card-blog-message-header{
+    font-weight: bold;
+    font-size: 13px;
+    font-family: "Georgia";
+    color: rgb(153, 153, 153);
+    line-height: 1.2;
+}
+.infromation-card-blog-message-info{
+    font-size: 11px;
+    font-family: "Georgia";
+    color: rgb(153, 153, 153);
+    line-height: 1.2;
+    margin-top: 7px;
+}
+.infromation-card-blog-message-text{
+    font-size: 12px;
+    font-family: "Georgia";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    margin-top: 12px;
+}
+.infromation-card-blog-message-link{
+    text-align: right;
+    margin-top: 15px;
+}
+.infromation-card-blog-message-link a{
+    font-size: 12px;
+    font-family: "Georgia";
+    color: rgb(167, 195, 83);
+    line-height: 1.2;
+    text-decoration: none;
+}
+.infromation-card form input {
+    height: 31px;
+}
+.infromation-card form input:first-child {
+    margin-top: 19px;
+}
+.infromation-card form textarea {
+    height: 110px;
+    resize: none;
+}
+.infromation-card form input, textarea{
+    background-color: rgb(56, 56, 56);
+    color: #989898;
+    margin-bottom: 10px;
+    font-family: "Georgia";
+    border-radius: 5px;
+    max-width: 225px;
+    width: 225px;
+    border: none;
+    padding: 11px 10px;
+}
+.infromation-card form input:last-child {
+    background-color: rgb(167, 195, 83);
+    font-size: 13px;
+    font-family: "Georgia";
+    line-height: 1.583;
+    color: rgb(49, 49, 49);
+    height: 31px;
+    width: 80px;
+    font-weight: bold;
+    padding: 0;
+}
+.copyright{
+    display: flex;
+    background-color: #313131;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: "Georgia";
+    color: rgb(153, 153, 153);
+    line-height: 1;
+    padding: 20px 0;
+}
+a:hover{
+    color: #15a110;
+    transition: 0.3s ease-in-out;
+}
+nav a:hover{
+    color: #d9ff00;
+    transition: 0.5s linear;
+}
+.infromation-card form input:hover, textarea:hover{
+    background-color: black;
+}
+.infromation-card form input:last-child:hover{
+    background-color: yellow;
+    width: 100%;
+    transition: 1s ease;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.prev:hover, .next:hover{
+    background-color: #a7c353;
+    border-color: black;
+    transition: 0.4s ease-in;
+}
+.prev:hover a, .next:hover a{
+    color:black;
+    transition: 0.4s ease-in;
+}
+.dot:hover{
+    background-color: #989898;
+    border: 3px solid #a7c353;
+}
