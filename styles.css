@@ -112,7 +112,7 @@ nav div:first-child a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 8px;
+    padding-bottom: 9px;
     width: 48px;
     height: 48px;
     margin-top: -24px;
@@ -515,6 +515,12 @@ nav a:hover{
     .slide{
         width: auto;
     }
+    .slider-main-text{
+        top:200px;
+    }
+    .slider-second-text{
+        bottom: 30px;
+    }
     .content-card-service-item-img{
         margin-right: 5px;
     }
@@ -536,6 +542,45 @@ nav a:hover{
     }
     .content-card-service-item{
         justify-content: center;
+    }
+    .logo{
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .main-logo{
+        font-size: 16px;
+    }
+    .secondary-logo{
+        font-size: 14px;
+    }
+    nav div{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    nav div a{
+            font-size: 11px;
+    }
+}
+@media (max-width: 770px){
+    .logo{
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .main-logo{
+        font-size: 16px;
+    }
+    .secondary-logo{
+        font-size: 14px;
+    }
+    nav div{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    nav div a{
+        font-size: 11px;
+    }
+    nav div:last-child{
+        margin-right: 0;
     }
 }
 @media (max-width: 645px){
@@ -577,17 +622,67 @@ nav a:hover{
     .infromation-card form input, textarea{
         width: 255px;
     }
-    .slider-main-text{
+    .slide{
         width: auto;
-        padding: 1px 5px;
-        font-size: 18px;
+        height: auto;
+        min-height: 200px;
+    } 
+    .slider-main-text{
+        font-size: 14px;
+        top: 45px;
+        width: auto;
+        padding: 5px;
+        right: 55px;
     }
     .slider-second-text{
+        padding: 5px;
+        width: 200px;
         height: auto;
-        padding: 1px 5px;
+        right: 55px;
+        bottom: 25px;
+    }
+    .prev, .next{
+        height: 24px;
+        width: 24px;
+        border: 1px solid #a7c353;
+        font-size: 24px;
+        padding-bottom: 5px;
+        margin-top: -12px;
+    }
+    .prev{
+        left: 5px;
+    }
+    .next{
+        right: 5px;
+    }
+    .dot{
+        height: 8px;
+        width: 8px;
+    }
+    .content-cards{
+        margin-top: 20px;
+        padding-top: 20px;
     }
     .shout{
         font-size: 14px;
         margin: 15px 15px 5px 15px;
+    }
+}
+@media (max-width: 330px) {
+    nav div{
+        padding-left: 0;
+        padding-right: 2px;
+    }
+    nav div a{
+        font-size: 10px;
+    }
+    .infromation-card form input, textarea {
+        width: 200px;
+    }
+    .slider-main-text{
+        right: 33px;
+    }
+    .slider-second-text{
+        right: 33px;
     }
 }
